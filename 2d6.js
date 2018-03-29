@@ -4,8 +4,6 @@ var dice = d6 [Math.floor(Math.random() * d6.length)];
 
 var dice02 = d6 [Math.floor(Math.random() * d6.length)];
 
-var roll = dice + dice02;
-
 var total = dice + dice02;
 
 document.write(dice + ',' + dice02);
@@ -37,9 +35,6 @@ var d6 = [1, 2, 3, 4, 5, 6];
 var dice = d6 [Math.floor(Math.random() * d6.length)];
 
 var dice02 = d6 [Math.floor(Math.random() * d6.length)];
-
-
-var roll = dice + dice02;
 
 var total = dice + dice02;
 
