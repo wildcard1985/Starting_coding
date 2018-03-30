@@ -12,26 +12,31 @@ var hit = m20hit [Math.floor(Math.random() * m20hit.length)];
 
 document.write('Your M20 fires a barrage at the enemy mech, a total of '+hit+' missiles hit');
 
+    //loop
+
 for (x=hit; hit > 0; hit--){
     console.log(hit);
-    var d6 = [1, 2, 3, 4, 5, 6];
+
+    //d6roller
+    
+var d6 = [1, 2, 3, 4, 5, 6];
 
 var dice = d6 [Math.floor(Math.random() * d6.length)];
 
 var dice02 = d6 [Math.floor(Math.random() * d6.length)];
 
 var total = dice + dice02;
- 
+
+    //fluff text
+    
 console.log(hit);
 document.write('<hr />');
 document.write('Missile hit #');
 document.write(hit);
-document.write('<br />');
-document.write(dice + ',' + dice02);
-document.write(' Total = ');
-document.write(total);
-document.write('<br />');   
+document.write(' = ');   
 
+    //hit chart text
+    
 	if(total == 2)
 {	
 	document.write(' Center Torso(CRIT)');
