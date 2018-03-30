@@ -34,11 +34,13 @@ var dice02 = d6 [Math.floor(Math.random() * d6.length)];
 
 var total = dice + dice02;
 
+	//change var name and [] to match different hit charts
+
 var m20hit = [6,6,9,12,12,12,12,16,16,20,20];
 
 var hit = m20hit [Math.floor(Math.random() * m20hit.length)];
 
-document.write('Your M20 fires a barrage at the enemy mech, a total of '+hit+' missiles hit');
+document.write('Your LRM20 fires a barrage at the enemy mech, a total of '+hit+' missiles hit');
 
     //loop
 
