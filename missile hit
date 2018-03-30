@@ -1,3 +1,31 @@
+<html>
+<head>
+<title>Firing missiles</title>
+<style>
+h1	{
+	color: red;
+	text-align:center;
+}
+h2	{
+	font-weight: bold;
+	color: red;
+	text-align:center;
+	clear:left;
+	margin-top:0px
+}
+h3	{
+	font-weight: bold;
+	text-align:center;
+	clear:left;
+	margin-top:0px;
+}
+</style>
+
+</head>
+<h1>Fire your missles at the enemy!<br></h1>
+<body>
+
+<script>
 var d6 = [1, 2, 3, 4, 5, 6];
 
 var dice = d6 [Math.floor(Math.random() * d6.length)];
@@ -32,46 +60,48 @@ var total = dice + dice02;
 console.log(hit);
 document.write('<hr />');
 document.write('Missile hit #');
-document.write(hit);
-document.write(' = ');   
+document.write(hit);   
 
     //hit chart text
     
 	if(total == 2)
 {	
-	document.write(' Center Torso(CRIT)');
+	document.write('<h2> Center Torso(CRIT)</h2>');
 }
 else if (total == 3 || total == 4)
 {	
-	document.write(' Right Arm');
+	document.write('<h3> Right Arm</h3>');
 }
 else if (total == 5)
 {	
-	document.write(' Right Leg');
+	document.write('<h3> Right Leg</h3>');
 }
 else if (total == 6)
 {	
-	document.write(' Right Torso');
+	document.write('<h3> Right Torso</h3>');
 }
 else if (total == 7)
 {	
-	document.write(' Center Torso');
+	document.write('<h3> Center Torso</h3>');
 }
 else if (total == 8)
 {	
-	document.write(' Left Torso');
+	document.write('<h3> Left Torso</h3>');
 }
 else if (total == 9)
 {	
-	document.write(' Left Leg');
+	document.write('<h3> Left Leg</h3>');
 }
 else if (total == 10 || total == 11)
 {	
-	document.write(' Left Arm');
+	document.write('<h3> Left Arm</h3>');
 }
 else if (total == 12)
 {	
-	document.write(' Head');
+	document.write('<h3> Head</h3>');
 }
 
 }
+</script>
+</body>
+</html>
